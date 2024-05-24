@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿<!--<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -33,6 +33,49 @@
     </main>
     <footer>
         <p>&copy; 2024 Impacto de las Tecnologías Web. Todos los derechos reservados. Jhon Cedeño C.</p>
+    </footer>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Impacto de las Tecnologías Web</title>
+</head>
+<body>
+    <header>
+        <h1>Impacto de las Tecnologías Web en la Sociedad y los Negocios</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sociedad.html">Sociedad</a></li>
+                <li><a href="negocios.html">Negocios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Contacto</h2>
+            <form onsubmit="alert('El formulario se ha enviado correctamente.'); this.reset(); return false;">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Impacto de las Tecnologías Web</p>
     </footer>
 </body>
 </html>
