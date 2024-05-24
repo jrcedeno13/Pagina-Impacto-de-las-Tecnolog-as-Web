@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sociedad.html">Impacto en la Sociedad</a></li>
+                <li><a href="negocios.html">Impacto en los Negocios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Formulario de Contacto</h2>
+            <form action="send_form.php" method="post">
+                <p><label for="name">Nombre:</label></p>
+                <p><input type="text" id="name" name="name" required></p>
+                <p><label for="email">Correo Electrónico:</label></p>
+                <p><input type="email" id="email" name="email" required></p>
+                <p><label for="message">Mensaje:</label></p>
+                <p><textarea id="message" name="message" rows="4" required></textarea></p>
+                <p><button type="submit">Enviar</button></p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Impacto de las Tecnologías Web. Todos los derechos reservados. Jhon Cedeño C.</p>
+    </footer>
+</body>
+</html>
