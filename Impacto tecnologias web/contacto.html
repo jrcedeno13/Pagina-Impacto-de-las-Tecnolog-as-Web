@@ -1,35 +1,44 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Impacto de las Tecnologías Web</title>
-</head>
-<body>
+    <title>Contacto - Tecnología al Día</title>
     <header>
-        <h1>Impacto de las Tecnologías Web en la Sociedad y los Negocios</h1>
+        <img src="imagenes/LogoTaD.jpg" alt="LogoTaD" width="10%">
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="sociedad.html">Sociedad</a></li>
-                <li><a href="negocios.html">Negocios</a></li>
+                <li><a href="sociedad.html">Impacto en la Sociedad</a></li>
+                <li><a href="negocios.html">Impacto en los Negocios</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav><br>
-    </header>
+    </header><br>
+</head>
+<body>
     <main>
         <section>
-            <h2>Contacto</h2>
-            <h4>Es un gusto para nosotros que nos contactes, por favor llena el formulario:</h4>
+            <h2>Contacta con<br>nosotros</h2>
+            <p>Puedes remitirnos cualquier duda o consulta mediante nuestro formulario<br>
+                de contacto. Los campos con asterísco (*) son obligatorios</p><br>
             <form onsubmit="alert('El formulario se ha enviado correctamente.'); this.reset(); return false;">
-                <p><label for="name">Nombre:</label></p>
+                <p><label for="name">Nombre*</label></p>
                 <p><input type="text" id="name" name="name" required></p>
+
+                <p><label for="family-name">Apellido*</label></p>
+                <p><input type="text" id="apellido" name="apellido" required></p>
                 
-                <p><label for="email">Correo Electrónico:</label></p>
-                <p><input type="email" id="email" name="email" required></p>
+                <p><label for="email">Correo Electrónico*</label></p>
+                <p><input type="email" id="email" name="email" size="50" required></p>
                 
-                <p><label for="message">Mensaje:</label></p>
-                <p><textarea id="message" name="message" rows="4" required></textarea></p>
+                <p><label for="message">Tu mensaje:</label></p>
+                <p><textarea id="message" name="message" cols="50" rows="8"></textarea></p>
+
+                <p><input type="checkbox" id="checkbox" name="checkbox"> 
+                    Deseo que Tecnología al Día me mantenga informado, por medios electrónicos, de<br>
+                    las novedades y noticias.
+                </p>
                 
                 <button type="submit">Enviar</button>
                 <button type="reset">Borrar</button>
@@ -38,6 +47,12 @@
     </main>
     <footer>
         <p>&copy; 2024 Impacto de las Tecnologías Web. Todos los derechos reservados. Jhon Cedeño C.</p>
+        <p>Tecnologías al día</p>
+        <p>Mapa Web</p>
+        <p>Estatutos TaD</p>
+        <p>Políticas de privacidad</p>
+        <p>Canal ético</p>
+        <p>Aviso legal</p>
     </footer>
 </body>
 </html>
