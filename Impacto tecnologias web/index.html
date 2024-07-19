@@ -4,84 +4,150 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esta página esta diseñada para mantenerte al día en los impactos de las tecnologías web dentro de los negocios y de la sociedad en general...">
+    <meta name="keywords" content="tecnología, tecnologías web, impacto">
     <title>Tecnología al día</title>
-    <header>
-        <img src="imagenes/LogoTaD.jpg" alt="LogoTaD" width="10%">
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="sociedad.html">Impacto en la Sociedad</a></li>
-                <li><a href="negocios.html">Impacto en los Negocios</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav><br>
-        
-        <p><h1>Impacto de las Tecnologías Web<br>
-        en la Sociedad y los Negocios</h1></p>
-    </header><br>
+    <!--icono alado del nombre en la pestaña-->
+    <link rel="shortcut icon" href="imagenes/logo.png">
+    <!--fuentes https://fonts.google.com/-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!--linkeo a archivo de normalizar-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--linkeo a hoja de estilos-->
+    <link rel="stylesheet" href="style.css">
+    <!--iconos fontawesome-->
+    <!--script src="https://kit.fontawesome.com/2cac316c1a.js" crossorigin="anonymous"></script-->
+    
 </head>
 
 <body>
-    
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <img src="imagenes/logo.png" class="logo">
+            </a>
+            <nav>
+                <a href="index.html" class="boton boton-menus">Inicio</a>
+                <a href="sociedad.html" class="boton boton-menus">Impacto en la Sociedad</a>
+                <a href="negocios.html" class="boton boton-menus">Impacto en los Negocios</a>
+                <a href="contacto.html" class="boton boton-menus">Contacto</a>
+            </nav>
+        </div>
+    </header>
     <main>
-        <section>
-            <h2>Bienvenidos</h2>
-            <p>Explora cómo las tecnologías web están transformando nuestro mundo y los negocios a través 
-                de nuestras secciones detalladas.</p><br>
-            <img src="imagenes/Impacto2.jpg" alt="Impacto" width="70%"> 
-        </section><br>
-        <section>
+        <section id="inicio" class="seccion-inicio">
+            <img src="imagenes/Impacto2.jpg" alt="Impacto Tecnológico">
+            <div class="bloque-inicio">
+                <h1>Bienvenidos a Tecnologías al Día</h1>
+                <p>Explora cómo las tecnologías están transformando nuestro mundo y los negocios a través de nuestras 
+                    secciones detalladas.</p>
+                <a href="#presentacion" class="boton boton-rojo">Ver más</a>
+            </div>
+        </section>
+
+        <section id="presentacion" class="seccion-presentacion">
+            <div class="bloque">
+                <h1>
+                    Impacto de las Tecnologías Web en la Sociedad y los Negocios.
+                </h1>
+                <p>
+                    En un mundo donde la tecnología avanza a un ritmo vertiginoso, comprender cómo las tecnologías web 
+                    influyen en diversos aspectos de nuestra vida es esencial para aprovechar al máximo sus beneficios 
+                    y mitigar sus desafíos.
+                </p>
+                <p>
+                    El objetivo principal de este sitio web es proporcionar una visión exhaustiva y detallada del 
+                    impacto que las tecnologías web han tenido y continúan teniendo en la sociedad y en el ámbito 
+                    empresarial. Desde la forma en que nos comunicamos y accedemos a la información, hasta cómo 
+                    las empresas operan y se adaptan a un mercado en constante cambio, las tecnologías web están 
+                    en el centro de esta transformación.
+                </p>
+                    A lo largo de nuestras páginas, exploraremos temas clave como el marketing digital, los modelos 
+                    de negocio online, el futuro del trabajo, la democratización del acceso a la información y la 
+                    conectividad global. Cada sección está diseñada para ofrecer información relevante y actualizada, 
+                    apoyada por estudios de caso, estadísticas y análisis de expertos.
+                <p>
+                    Nuestro objetivo es ser una fuente confiable y útil tanto para profesionales del sector, estudiantes, 
+                    investigadores, como para cualquier persona interesada en entender el papel crucial que juegan las 
+                    tecnologías web en nuestro mundo contemporáneo. Acompáñanos en este recorrido y descubre cómo las 
+                    tecnologías web están moldeando el presente y el futuro de nuestra sociedad y nuestros negocios.
+                </p>
+                <h4>
+                    Tecnologías al Día.
+                </h4>
+            </div>
+        </section>
+
+        <section id="articulo" class="seccion-articulo">
             <h2>Últimos Artículos</h2><br>
-            <article>
-                <h3>La revolución digital en la educación</h3><br>
-                <img src="imagenes/educacion-digital.jpg" alt="Educación Digital" width="30%">              
-                <p style="text-align: justify;">Las tecnologías web han transformado radicalmente la educación, 
-                    tanto en la forma en que aprendemos y enseñamos, ahora es mas común tener acceso a recursos 
-                    educativos a nivel global y democratizando el aprendizaje. Plataformas de e-learning, 
-                    bibliotecas digitales y herramientas de colaboración en línea han permitido que el conocimiento 
-                    sea más accesible y personalizado.</p>
-                <p style="text-align: justify;">Esta transformación no solo ha beneficiado a los estudiantes, 
-                    quienes ahora pueden aprender a su propio ritmo y desde cualquier lugar, sino también a los educadores, 
-                    que cuentan con nuevos métodos para impartir conocimiento y evaluar el progreso de sus alumnos.</p> 
-                <p style="text-align: justify;">Además, la capacidad de realizar clases virtuales y seminarios 
-                    en tiempo real ha reducido las barreras geográficas y económicas, ampliando las oportunidades 
-                    educativas para personas de todas las edades y contextos socioeconómicos...
-                    <a href="educacion.html">Leer mas...</a></p><br><br>
-            </article>
+            <div class="articulos-container">
+                <article>
+                    <h3>La revolución digital en la educación</h3><br>
+                    <img src="imagenes/educacion-digital.jpg" alt="Educación Digital">              
+                    <p>Las tecnologías web han transformado radicalmente la educación, 
+                        tanto en la forma en que aprendemos y enseñamos, ahora es mas común tener acceso a recursos 
+                        educativos a nivel global y democratizando el aprendizaje. Plataformas de e-learning, 
+                        bibliotecas digitales y herramientas de colaboración en línea han permitido que el conocimiento 
+                        sea más accesible y personalizado.</p>
+                    <p>Esta transformación no solo ha beneficiado a los estudiantes, 
+                        quienes ahora pueden aprender a su propio ritmo y desde cualquier lugar, sino también a los educadores, 
+                        que cuentan con nuevos métodos para impartir conocimiento y evaluar el progreso de sus alumnos.</p> 
+                    <p>Además, la capacidad de realizar clases virtuales y seminarios 
+                        en tiempo real ha reducido las barreras geográficas y económicas, ampliando las oportunidades 
+                        educativas para personas de todas las edades y contextos socioeconómicos...
+                        <a href="educacion.html">Leer mas...</a></p><br><br>
+                </article>
             
-            <article>
-                <h3>Comercio electrónico: una nueva era</h3><br>
-                <img src="imagenes/comercio-electronico.jpeg" alt="Comercio Electrónico" width="30%">
-                <p>Descubre cómo el e-commerce ha transformado los hábitos de consumo y las estrategias de negocio.</p>
-                <p style="text-align: justify;">El comercio electrónico ha revolucionado la manera en que las empresas 
-                    operan y los consumidores compran, inaugurando una nueva era en el mundo de los negocios. 
-                    Gracias a las tecnologías web, las empresas pueden llegar a mercados globales sin la necesidad 
-                    de una presencia física, reduciendo costos operativos y ampliando su alcance de manera exponencial.</p>
-                <p style="text-align: justify;">Los consumidores, por su parte, disfrutan de la comodidad de realizar 
-                    compras desde cualquier lugar y en cualquier momento, accediendo a una amplia variedad de productos y 
-                    servicios con tan solo unos clics. Esta transformación digital ha fomentado el desarrollo de nuevas 
-                    estrategias de marketing, como el uso de datos y analíticas avanzadas para personalizar la experiencia 
-                    de compra y mejorar la relación con el cliente.</p>
-                <p style="text-align: justify;">Además, ha impulsado la creación de innovadores modelos de negocio, 
-                    desde suscripciones y servicios bajo demanda hasta marketplaces y plataformas de venta directa 
-                    entre consumidores. Sin duda, el e-commerce ha cambiado para siempre los hábitos de consumo y 
-                    ha obligado a las empresas a adaptarse rápidamente para mantenerse competitivas en un mercado 
-                    en constante evolución.
-                <a href="comercio-electronico.html">Leer mas...</a></p><br><br>               
-            </article>
+                <article>
+                    <h3>Comercio electrónico: una nueva era</h3><br>
+                    <img src="imagenes/comercio-electronico.jpeg" alt="Comercio Electrónico">
+                    <p>Descubre cómo el e-commerce ha transformado los hábitos de consumo y las estrategias de negocio.</p>
+                    <p style="text-align: justify;">El comercio electrónico ha revolucionado la manera en que las empresas 
+                        operan y los consumidores compran, inaugurando una nueva era en el mundo de los negocios. 
+                        Gracias a las tecnologías web, las empresas pueden llegar a mercados globales sin la necesidad 
+                        de una presencia física, reduciendo costos operativos y ampliando su alcance de manera exponencial.</p>
+                    <p style="text-align: justify;">Los consumidores, por su parte, disfrutan de la comodidad de realizar 
+                        compras desde cualquier lugar y en cualquier momento, accediendo a una amplia variedad de productos y 
+                        servicios con tan solo unos clics. Esta transformación digital ha fomentado el desarrollo de nuevas 
+                        estrategias de marketing, como el uso de datos y analíticas avanzadas para personalizar la experiencia 
+                        de compra y mejorar la relación con el cliente.</p>
+                    <p style="text-align: justify;">Además, ha impulsado la creación de innovadores modelos de negocio, 
+                        desde suscripciones y servicios bajo demanda hasta marketplaces y plataformas de venta directa 
+                        entre consumidores. Sin duda, el e-commerce ha cambiado para siempre los hábitos de consumo y 
+                        ha obligado a las empresas a adaptarse rápidamente para mantenerse competitivas en un mercado 
+                        en constante evolución.
+                    <a href="comercio-electronico.html">Leer mas...</a></p><br><br>               
+                </article>
+            </div>
         </section>
     </main>
     <br>
     <footer>
-        <p>&copy; 2024 Impacto de las Tecnologías Web. Todos los derechos reservados. Jhon Cedeño C.</p>
-        <p>Tecnologías al día</p>
-        <p>Mapa Web</p>
-        <p>Estatutos TaD</p>
-        <p>Políticas de privacidad</p>
-        <p>Canal ético</p>
-        <p>Aviso legal</p>
-        <img src="imagenes/redes.png" alt="redes" width="10%">
+        <div class="container">
+            <div>
+                <p>&copy; 2024 Impacto de las Tecnologías Web. Todos los derechos reservados. Jhon Cedeño C.</p>
+            </div>
+            <div class="footer-links">
+                <div id="mas-info">
+                    <a href="index.html">Tecnologías al día</a>
+                </div>
+                <div>
+                    <nav id="mas-info">
+                        <a href="proximamente.html">Mapa Web</a>
+                        <a href="proximamente.html">Estatutos TaD</a>
+                        <a href="proximamente.html">Políticas de privacidad</a>
+                        <a href="proximamente.html">Canal Ético</a>
+                        <a href="proximamente.html">Aviso Legal</a>
+                    </nav>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes/redes.png" alt="redes" class="redes-sociales">
+            </div>
+        </div>
     </footer>
 </body>
 
 </html>
+
+

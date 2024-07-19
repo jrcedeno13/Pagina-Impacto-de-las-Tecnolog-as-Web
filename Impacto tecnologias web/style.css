@@ -1,0 +1,235 @@
+/* Estilos generales */
+*{
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos del header */
+header {
+  background-color: #badff7e8;
+  color: #fff;
+  padding: 10px 10px;
+}
+header .container {
+  max-width: auto;
+  margin: 10 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container .logo {
+  height: 150px;
+  padding: 25px;
+  margin-right: 10px;
+}
+
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.boton-menus {
+  background-color: #000000;
+  color: #00ccff;
+  margin: 10px;
+  
+}
+
+.boton-menus:hover {
+  background-color:#00ccff;
+  color: #000000;
+}
+
+/* Estilos de la sección de inicio */
+.seccion-inicio{
+  position: static;
+}
+
+#inicio {
+  position: relative;
+}
+
+#inicio img {
+  width: 100%;
+  height: 100%;
+}
+
+#inicio .bloque-inicio {
+  display: block;
+  text-align: center;
+  align-content: space-around;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: #0000008f;
+  padding: 10px;
+  border-radius: 5px;
+  max-height: 80%;
+  min-height: 40%;
+  min-width: 80%;  
+  overflow: scroll;
+}
+  
+#inicio .bloque-inicio h1 {
+  font-size: 200%;
+  margin: 20px 10px;
+ }
+
+#inicio .bloque-inicio p {
+  font-size: 18px;
+  margin: 20px 10px;  
+}
+
+.boton-rojo {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.boton-rojo:hover {
+  background-color: #a30000;
+}
+
+/* Estilos de la sección presentacion */
+#presentacion {
+  align-content: space-around;
+  background-image: url(imagenes/presentacion.jpg);
+  background-size: cover;
+  
+}
+.seccion-presentacion{
+  padding: 30px 10px;
+}
+
+#presentacion .bloque {
+  display: block;
+  text-align: center;
+  align-content:space-between;
+  position:static;
+  top: 50%;
+  left: 50%;
+  color: #1b1b1b;
+  background-color: #ffffffa4;
+  padding: 10px;
+  border-radius: 5px;  
+}
+
+/* Estilos de la sección de artículos */
+.section-articulo {
+  padding: 40px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.articulos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -10px; /* Margen negativo para compensar el margen de los artículos */
+}
+
+#articulo h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #016881;
+}
+
+article {
+  max-width: 600px;
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #686767;
+  border-radius: 5px;
+  background-color: #00000034;
+}
+
+article h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #016881;
+}
+
+article p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Estilos del footer */
+footer {
+  max-width: auto;
+  background-color: #333;
+  color: #fff;
+  padding: 0px 10px;
+
+}
+  
+footer .container {
+  padding: 10px 0px;
+}
+
+footer .container div{
+  margin: 15px 0px;
+}
+
+/*footer .container div nav a{
+  justify-content: space-between;
+  margin: 20px;
+}*/
+
+#mas-info a{
+  justify-content: space-between;
+  margin: 5px;
+  color: #00ccff;
+  font-size: 14px;
+  display:flow-root;
+}
+
+/*footer .container div nav a:hover {
+  color: #ccc;
+}*/
+
+#mas-info a:hover {
+  color: #ccc;
+}
+
+footer p:first-child {
+  margin: 0;
+}
+  
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+.footer-links p {
+  margin: 0 10px;
+}
+
+.footer-links p:last-child {
+  color: #ccc;
+  text-decoration: underline;
+}
+  
+.redes-sociales {
+  height: 30px;
+}
+
