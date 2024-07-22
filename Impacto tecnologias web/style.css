@@ -1,6 +1,6 @@
 /* Estilos generales */
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -15,6 +15,7 @@ header {
   color: #fff;
   padding: 10px 10px;
 }
+
 header .container {
   max-width: auto;
   margin: 10 auto;
@@ -40,16 +41,16 @@ header .container .logo {
   background-color: #000000;
   color: #00ccff;
   margin: 10px;
-  
+
 }
 
 .boton-menus:hover {
-  background-color:#00ccff;
+  background-color: #00ccff;
   color: #000000;
 }
 
 /* Estilos de la sección de inicio */
-.seccion-inicio{
+.seccion-inicio {
   position: static;
 }
 
@@ -66,7 +67,7 @@ header .container .logo {
   display: block;
   text-align: center;
   align-content: space-around;
-  position:absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -76,18 +77,18 @@ header .container .logo {
   border-radius: 5px;
   max-height: 80%;
   min-height: 40%;
-  min-width: 80%;  
-  overflow: scroll;
+  min-width: 80%;
+  overflow: auto;
 }
-  
+
 #inicio .bloque-inicio h1 {
   font-size: 200%;
   margin: 20px 10px;
- }
+}
 
 #inicio .bloque-inicio p {
   font-size: 18px;
-  margin: 20px 10px;  
+  margin: 20px 10px;
 }
 
 .boton-rojo {
@@ -104,23 +105,23 @@ header .container .logo {
   align-content: space-around;
   background-image: url(imagenes/presentacion.jpg);
   background-size: cover;
-  
 }
-.seccion-presentacion{
+
+.seccion-presentacion {
   padding: 30px 10px;
 }
 
 #presentacion .bloque {
   display: block;
   text-align: center;
-  align-content:space-between;
-  position:static;
+  align-content: space-between;
+  position: static;
   top: 50%;
   left: 50%;
   color: #1b1b1b;
   background-color: #ffffffa4;
   padding: 10px;
-  border-radius: 5px;  
+  border-radius: 5px;
 }
 
 /* Estilos de la sección de artículos */
@@ -131,23 +132,59 @@ header .container .logo {
   justify-content: space-between;
 }
 
-.articulos-container {
+.contenedor-articulos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: -10px; /* Margen negativo para compensar el margen de los artículos */
+  justify-content: space-around;
+  position: relative;
 }
 
-#articulo h2 {
+#articulo h2 a {
+  text-decoration: none;
   font-size: 28px;
-  margin-bottom: 10px;
   color: #016881;
+  margin: 10px;
 }
 
-article {
-  max-width: 600px;
-  width: 100%;
+section div article {
+  display: block;
+  max-width: 40%;
   margin: 20px;
+  padding: 20px;
+  border: 1px solid #686767;
+  border-radius: 5px;
+  background-color: #00000034;
+}
+
+.contenedor-articulosx3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.divx3 {
+  flex: 1;
+  margin: 10px;
+  min-width: 250px;
+  box-sizing: border-box;
+}
+
+section div div article {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #686767;
+  border-radius: 5px;
+  background-color: #00000034;
+}
+
+.divx3Article {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  margin: 10px;
   padding: 20px;
   border: 1px solid #686767;
   border-radius: 5px;
@@ -166,10 +203,15 @@ article p {
   text-align: justify;
 }
 
-article img {
-  max-width: 100%;
+.img-article {
+  width: 100%;
   height: auto;
-  margin-bottom: 20px;
+}
+
+.img-article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Estilos del footer */
@@ -180,12 +222,12 @@ footer {
   padding: 0px 10px;
 
 }
-  
+
 footer .container {
   padding: 10px 0px;
 }
 
-footer .container div{
+footer .container div {
   margin: 15px 0px;
 }
 
@@ -194,12 +236,12 @@ footer .container div{
   margin: 20px;
 }*/
 
-#mas-info a{
+#mas-info a {
   justify-content: space-between;
   margin: 5px;
   color: #00ccff;
   font-size: 14px;
-  display:flow-root;
+  display: flow-root;
 }
 
 /*footer .container div nav a:hover {
@@ -213,13 +255,13 @@ footer .container div{
 footer p:first-child {
   margin: 0;
 }
-  
+
 .footer-links {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-  
+
 .footer-links p {
   margin: 0 10px;
 }
@@ -228,8 +270,255 @@ footer p:first-child {
   color: #ccc;
   text-decoration: underline;
 }
-  
+
 .redes-sociales {
   height: 30px;
 }
 
+/*para paginas secundarias*/
+#presentacion-paginas {
+  align-content: space-around;
+  background-color: #ffffff6c;
+  background-size: cover;
+}
+
+#presentacion-paginas img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: static;
+}
+
+#presentacion-paginas h1 {
+  text-decoration: none;
+  font-size: 28px;
+  color: #016881;
+  margin: 20px 10px;
+}
+
+#presentacion-paginas h2 {
+  text-decoration: none;
+  font-size: 20px;
+  color: #016881;
+  margin: 10px 0px;
+}
+
+.contenido {
+  margin: 20px;
+}
+
+#contenido p {
+  font-size: 12px;
+}
+
+#cabecera-articulo {
+  margin: 10px;
+}
+
+#cabecera-articulo h6 {
+  font-size: 10px;
+}
+
+#cabecera-articulo h1 {
+  font-size: 28px;
+  margin: 10px;
+  color: #016881;
+}
+
+#seccion-articulo-in {
+  max-width: max-content;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  background-color: #00000034;
+}
+
+.contenedor-img {
+  display: flex;
+  justify-content:center;
+  height: auto;
+
+}
+
+.contenedor-img img{
+  width: 100%;
+  height: 100%;
+}
+
+#contenedor-imgSimple {
+  max-width: 200%;
+  height: auto;
+  justify-content: space-around;
+  display: flex;
+}
+
+/*#seccion-articulo-in img {
+  display: flex;
+  max-width: 100%;
+  max-height: 400px;
+  height: auto;
+}*/
+
+
+/*para la tabla*/
+#tabla {
+  display: flex;
+  width: 100%; /* Ancho de la tabla al 100% del contenedor */
+  height: auto;
+}
+
+table {
+  width: 100%; /* Ancho de la tabla al 100% del contenedor */
+  height: auto;
+  border-collapse: collapse; /* Colapsa los bordes de la tabla */
+  font-family: Arial, sans-serif; /* Fuente de la tabla */
+  margin: 10px;
+}
+
+caption {
+  font-size: 1.2em; /* Tamaño de fuente del título */
+  font-weight: bold; /* Negrita para el título */
+  margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+th, td {
+  padding: 10px; /* Espaciado interno de las celdas */
+  text-align: left; /* Alineación del texto a la izquierda */
+  border-bottom: 1px solid #ddd; /* Borde inferior de las celdas */
+}
+
+th {
+  background-color: #f2f2f2; /* Color de fondo de las celdas de encabezado */
+}
+
+td a {
+  color: #007bff; /* Color de los enlaces en las celdas de datos */
+  text-decoration: none; /* Elimina la decoración de subrayado de los enlaces */
+}
+
+td a:hover {
+  color: #0056b3; /* Color de los enlaces al pasar el cursor sobre ellos */
+  text-decoration: underline; /* Agrega un subrayado al pasar el cursor sobre los enlaces */
+}
+
+aside {
+  background-color: #f9f9f9; /* Color de fondo claro */
+  border: 1px solid #ddd; /* Borde gris claro */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  margin: 20px 10px; /* Margen superior e inferior */
+  font-family: Arial, sans-serif; /* Fuente */
+}
+
+aside h2 {
+  font-size: 1.5em; /* Tamaño de fuente del encabezado */
+  margin-bottom: 10px; /* Espacio debajo del encabezado */
+  color: #333; /* Color del texto */
+}
+
+aside p {
+  font-size: 1em; /* Tamaño de fuente del párrafo */
+  margin-bottom: 15px; /* Espacio debajo del párrafo */
+  color: #555; /* Color del texto */
+}
+
+aside ul {
+  list-style-type: disc; /* Estilo de lista con puntos */
+  padding-left: 20px; /* Espaciado a la izquierda para la lista */
+}
+
+aside li {
+  margin-bottom: 8px; /* Espacio entre los elementos de la lista */
+}
+
+aside a {
+  color: #007bff; /* Color de los enlaces */
+  text-decoration: none; /* Sin subrayado */
+}
+
+aside a:hover {
+  color: #0056b3; /* Color de los enlaces al pasar el cursor */
+  text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+
+/*para contacto*/
+/* Estilo general del main */
+.main-contacto {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de la sección */
+.section-contacto {
+  padding: 20px;
+}
+
+/* Estilo de los encabezados */
+.section-contacto h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Estilo de los párrafos */
+.section-contacto p {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Estilo de las etiquetas */
+.section-contacto label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Estilo de los inputs y textarea */
+.section-contacto input[type="text"],
+.section-contacto input[type="email"],
+.section-contacto textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+/* Estilo del checkbox */
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Estilo de los botones */
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button[type="reset"] {
+  background-color: #6c757d;
+}
+
+button[type="reset"]:hover {
+  background-color: #5a6268;
+}

@@ -4,108 +4,155 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Esta página esta diseñada para mantenerte al día en los impactos de las tecnologías web dentro de los negocios y de la sociedad en general...">
+    <meta name="keywords" content="tecnología, tecnologías web, impacto">
     <title>La revolución digital en la educación</title>
-    <header>
-        <img src="imagenes/LogoTaD.jpg" alt="LogoTaD" width="10%">
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="sociedad.html">Impacto en la Sociedad</a></li>
-                <li><a href="negocios.html">Impacto en los Negocios</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header><br>
+    <!--icono alado del nombre en la pestaña-->
+    <link rel="shortcut icon" href="imagenes/logo.png">
+    <!--fuentes https://fonts.google.com/-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!--linkeo a archivo de normalizar-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--linkeo a hoja de estilos-->
+    <link rel="stylesheet" href="style.css">
+    <!--iconos fontawesome-->
+    <!--script src="https://kit.fontawesome.com/2cac316c1a.js" crossorigin="anonymous"></script-->
 </head>
 
 <body>
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <img src="imagenes/logo.png" class="logo">
+            </a>
+            <nav>
+                <a href="index.html" class="boton boton-menus">Inicio</a>
+                <a href="sociedad.html" class="boton boton-menus">Impacto en la Sociedad</a>
+                <a href="negocios.html" class="boton boton-menus">Impacto en los Negocios</a>
+                <a href="contacto.html" class="boton boton-menus">Contacto</a>
+            </nav>
+        </div>
+    </header>
     <main>
-        <section>
+        <section id="cabecera-articulo">
             <h6>ARTICULO</h6>
             <h1>La revolución digital en<br>
                 la educación</h1><br><br>
-            <h5><a href="index.html">Regresar al inicio</a></h5>   
+            <h5><a href="index.html">Regresar al inicio</a></h5>
         </section>
-        <section>
+        <section id="seccion-articulo-in">
+
+            <div class="contenedor-img">
+                <div>
+                    <img src="imagenes/educacion-digital.jpg" alt="Educación Digital">
+                </div>
+                <div>
+                    <img src="imagenes/educacion-digital2.png" alt="Educación Digital">
+                </div>
+            </div>
             <article>
-                <img src="imagenes/educacion-digital.jpg" alt="Educación Digital" width="30%">              
-                <img src="imagenes/educacion-digital2.png" alt="Educación Digital" width="33%"><br>
-                <p>Las tecnologías web han transformado radicalmente la educación, proporcionando acceso a 
-                    recursos educativos a nivel global y democratizando el aprendizaje. Plataformas 
-                    de e-learning, bibliotecas digitales y herramientas de colaboración en línea han 
-                    permitido que el conocimiento sea más accesible y personalizado. Esta transformación 
-                    no solo ha beneficiado a los estudiantes, quienes ahora pueden aprender a su propio 
-                    ritmo y desde cualquier lugar, sino también a los educadores, que cuentan con nuevos 
-                    métodos para impartir conocimiento y evaluar el progreso de sus alumnos. Además, 
-                    la capacidad de realizar clases virtuales y seminarios en tiempo real ha reducido 
-                    las barreras geográficas y económicas, ampliando las oportunidades educativas para 
-                    personas de todas las edades y contextos socioeconómicos.</p>
-            
-                <p>La revolución digital ha permitido la creación de entornos de aprendizaje inmersivos 
-                    que antes eran inimaginables. Las tecnologías como la realidad aumentada (AR) y la 
-                    realidad virtual (VR) están siendo incorporadas en las aulas para ofrecer experiencias 
-                    de aprendizaje más interactivas y atractivas. Por ejemplo, los estudiantes pueden 
-                    realizar recorridos virtuales por antiguas civilizaciones, explorar el espacio 
-                    exterior o incluso realizar disecciones virtuales en una clase de biología.</p>
-                    
-                <p>Estas tecnologías no solo hacen que el aprendizaje sea más divertido, sino que 
-                    también ayudan a los estudiantes a comprender conceptos abstractos y difíciles de 
-                    visualizar. Además, las herramientas de aprendizaje gamificado, que utilizan elementos 
-                    de juego para motivar y enganchar a los estudiantes, están demostrando ser efectivas 
-                    para mejorar la retención de conocimientos y fomentar la participación activa en el 
-                    proceso educativo.</p>
-            
-                <p>Otra dimensión crucial de la revolución digital en la educación es la capacidad de 
-                    analizar grandes volúmenes de datos para mejorar los resultados educativos. 
-                    El análisis de datos educativos (Learning Analytics) permite a los educadores 
-                    recopilar y analizar datos sobre el rendimiento de los estudiantes en tiempo real. 
-                    Esto facilita la identificación temprana de problemas y la implementación de 
-                    intervenciones específicas para apoyar a los estudiantes que lo necesitan. Además, 
-                    los datos pueden proporcionar información valiosa sobre qué métodos de enseñanza 
-                    son más efectivos y cómo los estudiantes interactúan con el contenido educativo. 
-                    Esta retroalimentación continua no solo mejora la calidad de la enseñanza, sino que 
-                    también permite un enfoque más centrado en el estudiante, adaptando el aprendizaje 
-                    a sus necesidades individuales y mejorando así los resultados académicos generales.</p>
+                <p>Las tecnologías web han transformado radicalmente la educación, proporcionando acceso a
+                    recursos educativos a nivel global y democratizando el aprendizaje. Plataformas
+                    de e-learning, bibliotecas digitales y herramientas de colaboración en línea han
+                    permitido que el conocimiento sea más accesible y personalizado. Esta transformación
+                    no solo ha beneficiado a los estudiantes, quienes ahora pueden aprender a su propio
+                    ritmo y desde cualquier lugar, sino también a los educadores, que cuentan con nuevos
+                    métodos para impartir conocimiento y evaluar el progreso de sus alumnos. Además,
+                    la capacidad de realizar clases virtuales y seminarios en tiempo real ha reducido
+                    las barreras geográficas y económicas, ampliando las oportunidades educativas para
+                    personas de todas las edades y contextos socioeconómicos.
+                </p>
 
-                <p>La colaboración es otro aspecto fundamental que ha sido potenciado por la 
-                    revolución digital en la educación. Plataformas como Google Classroom, 
-                    Microsoft Teams y otras herramientas de colaboración en línea permiten a 
-                    estudiantes y profesores interactuar de manera más eficiente, compartir 
-                    recursos y trabajar en proyectos conjuntos sin las limitaciones físicas 
-                    del aula tradicional. Estas herramientas facilitan la comunicación en tiempo 
-                    real a través de chats, videoconferencias y foros de discusión, promoviendo 
-                    un aprendizaje más colaborativo y dinámico. Además, la capacidad de almacenar 
-                    y compartir documentos en la nube garantiza que todos los participantes 
-                    tengan acceso a la información más actualizada, lo que mejora la coordinación 
-                    y la productividad en entornos educativos.</p>
+                <p>La revolución digital ha permitido la creación de entornos de aprendizaje inmersivos
+                    que antes eran inimaginables. Las tecnologías como la realidad aumentada (AR) y la
+                    realidad virtual (VR) están siendo incorporadas en las aulas para ofrecer experiencias
+                    de aprendizaje más interactivas y atractivas. Por ejemplo, los estudiantes pueden
+                    realizar recorridos virtuales por antiguas civilizaciones, explorar el espacio
+                    exterior o incluso realizar disecciones virtuales en una clase de biología.
+                </p>
 
-                <p>La inclusión educativa también ha visto grandes beneficios gracias a la 
-                    tecnología digital. Los estudiantes con discapacidades físicas o de 
-                    aprendizaje ahora tienen acceso a una gama de herramientas y recursos 
-                    que pueden personalizarse para satisfacer sus necesidades específicas. 
-                    Tecnologías como los lectores de pantalla, el software de reconocimiento 
-                    de voz y las plataformas de aprendizaje adaptativo están ayudando a eliminar 
-                    barreras y a proporcionar un entorno de aprendizaje más equitativo. Además, 
-                    los recursos educativos abiertos (REA) permiten que materiales de aprendizaje 
-                    de alta calidad estén disponibles de forma gratuita, lo que facilita el acceso 
-                    a la educación para comunidades desfavorecidas. Esta democratización del 
-                    conocimiento es un paso importante hacia una educación más inclusiva y 
-                    justa para todos.</p>
+                <p>Estas tecnologías no solo hacen que el aprendizaje sea más divertido, sino que
+                    también ayudan a los estudiantes a comprender conceptos abstractos y difíciles de
+                    visualizar. Además, las herramientas de aprendizaje gamificado, que utilizan elementos
+                    de juego para motivar y enganchar a los estudiantes, están demostrando ser efectivas
+                    para mejorar la retención de conocimientos y fomentar la participación activa en el
+                    proceso educativo.
+                </p>
 
-                <p><h5><a href="index.html">Regresar al inicio</a></h5></p>
+                <p>Otra dimensión crucial de la revolución digital en la educación es la capacidad de
+                    analizar grandes volúmenes de datos para mejorar los resultados educativos.
+                    El análisis de datos educativos (Learning Analytics) permite a los educadores
+                    recopilar y analizar datos sobre el rendimiento de los estudiantes en tiempo real.
+                    Esto facilita la identificación temprana de problemas y la implementación de
+                    intervenciones específicas para apoyar a los estudiantes que lo necesitan. Además,
+                    los datos pueden proporcionar información valiosa sobre qué métodos de enseñanza
+                    son más efectivos y cómo los estudiantes interactúan con el contenido educativo.
+                    Esta retroalimentación continua no solo mejora la calidad de la enseñanza, sino que
+                    también permite un enfoque más centrado en el estudiante, adaptando el aprendizaje
+                    a sus necesidades individuales y mejorando así los resultados académicos generales.
+                </p>
+
+                <p>La colaboración es otro aspecto fundamental que ha sido potenciado por la
+                    revolución digital en la educación. Plataformas como Google Classroom,
+                    Microsoft Teams y otras herramientas de colaboración en línea permiten a
+                    estudiantes y profesores interactuar de manera más eficiente, compartir
+                    recursos y trabajar en proyectos conjuntos sin las limitaciones físicas
+                    del aula tradicional. Estas herramientas facilitan la comunicación en tiempo
+                    real a través de chats, videoconferencias y foros de discusión, promoviendo
+                    un aprendizaje más colaborativo y dinámico. Además, la capacidad de almacenar
+                    y compartir documentos en la nube garantiza que todos los participantes
+                    tengan acceso a la información más actualizada, lo que mejora la coordinación
+                    y la productividad en entornos educativos.
+                </p>
+
+                <p>La inclusión educativa también ha visto grandes beneficios gracias a la
+                    tecnología digital. Los estudiantes con discapacidades físicas o de
+                    aprendizaje ahora tienen acceso a una gama de herramientas y recursos
+                    que pueden personalizarse para satisfacer sus necesidades específicas.
+                    Tecnologías como los lectores de pantalla, el software de reconocimiento
+                    de voz y las plataformas de aprendizaje adaptativo están ayudando a eliminar
+                    barreras y a proporcionar un entorno de aprendizaje más equitativo. Además,
+                    los recursos educativos abiertos (REA) permiten que materiales de aprendizaje
+                    de alta calidad estén disponibles de forma gratuita, lo que facilita el acceso
+                    a la educación para comunidades desfavorecidas. Esta democratización del
+                    conocimiento es un paso importante hacia una educación más inclusiva y
+                    justa para todos.
+                </p>
+
+                <p>
+                <h5><a href="index.html">Regresar al inicio</a></h5>
+                </p>
+            </div>
             </article>
-        </section>
+        </section><br>
     </main>
-    <br>
+
     <footer>
-        <p>&copy; 2024 Impacto de las Tecnologías Web. Todos los derechos reservados. Jhon Cedeño C.</p>
-        <p>Tecnologías al día</p>
-        <p>Mapa Web</p>
-        <p>Estatutos TaD</p>
-        <p>Políticas de privacidad</p>
-        <p>Canal ético</p>
-        <p>Aviso legal</p>
-        <img src="imagenes/redes.png" alt="redes" width="10%">
+        <div class="container">
+            <div>
+                <p>&copy; 2024 Impacto de las Tecnologías Web. Todos los derechos reservados. Jhon Cedeño C.</p>
+            </div>
+            <div class="footer-links">
+                <div id="mas-info">
+                    <a href="index.html">Tecnologías al día</a>
+                </div>
+                <div>
+                    <nav id="mas-info">
+                        <a href="proximamente.html">Mapa Web</a>
+                        <a href="proximamente.html">Estatutos TaD</a>
+                        <a href="proximamente.html">Políticas de privacidad</a>
+                        <a href="proximamente.html">Canal Ético</a>
+                        <a href="proximamente.html">Aviso Legal</a>
+                    </nav>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes/redes.png" alt="redes" class="redes-sociales">
+            </div>
+        </div>
     </footer>
 </body>
 

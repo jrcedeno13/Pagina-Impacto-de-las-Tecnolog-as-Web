@@ -1,24 +1,42 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Esta página esta diseñada para mantenerte al día en los impactos de las tecnologías web dentro de los negocios y de la sociedad en general...">
+    <meta name="keywords" content="tecnología, tecnologías web, impacto">
     <title>Contacto - Tecnología al Día</title>
-    <header>
-        <img src="imagenes/LogoTaD.jpg" alt="LogoTaD" width="10%">
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="sociedad.html">Impacto en la Sociedad</a></li>
-                <li><a href="negocios.html">Impacto en los Negocios</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav><br>
-    </header><br>
+    <!--icono alado del nombre en la pestaña-->
+    <link rel="shortcut icon" href="imagenes/logo.png">
+    <!--fuentes https://fonts.google.com/-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!--linkeo a archivo de normalizar-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--linkeo a hoja de estilos-->
+    <link rel="stylesheet" href="style.css">
+    <!--iconos fontawesome-->
+    <!--script src="https://kit.fontawesome.com/2cac316c1a.js" crossorigin="anonymous"></script-->
 </head>
 <body>
-    <main>
-        <section>
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <img src="imagenes/logo.png" class="logo">
+            </a>
+            <nav>
+                <a href="index.html" class="boton boton-menus">Inicio</a>
+                <a href="sociedad.html" class="boton boton-menus">Impacto en la Sociedad</a>
+                <a href="negocios.html" class="boton boton-menus">Impacto en los Negocios</a>
+                <a href="contacto.html" class="boton boton-menus">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main-contacto">
+        <section class="section-contacto">
             <h2>Contacta con<br>nosotros</h2>
             <p>Puedes remitirnos cualquier duda o consulta mediante nuestro formulario<br>
                 de contacto. Los campos con asterísco (*) son obligatorios</p><br>
@@ -46,14 +64,28 @@
         </section><br>
     </main>
     <footer>
-        <p>&copy; 2024 Impacto de las Tecnologías Web. Todos los derechos reservados. Jhon Cedeño C.</p>
-        <p>Tecnologías al día</p>
-        <p>Mapa Web</p>
-        <p>Estatutos TaD</p>
-        <p>Políticas de privacidad</p>
-        <p>Canal ético</p>
-        <p>Aviso legal</p>
-        <img src="imagenes/redes.png" alt="redes" width="10%">
+        <div class="container">
+            <div>
+                <p>&copy; 2024 Impacto de las Tecnologías Web. Todos los derechos reservados. Jhon Cedeño C.</p>
+            </div>
+            <div class="footer-links">
+                <div id="mas-info">
+                    <a href="index.html">Tecnologías al día</a>
+                </div>
+                <div>
+                    <nav id="mas-info">
+                        <a href="proximamente.html">Mapa Web</a>
+                        <a href="proximamente.html">Estatutos TaD</a>
+                        <a href="proximamente.html">Políticas de privacidad</a>
+                        <a href="proximamente.html">Canal Ético</a>
+                        <a href="proximamente.html">Aviso Legal</a>
+                    </nav>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes/redes.png" alt="redes" class="redes-sociales">
+            </div>
+        </div>
     </footer>
 </body>
 </html>
